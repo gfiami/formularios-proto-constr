@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form action="." method="GET" onsubmit="functionRedirect();return false">
+    <form action="." method="GET" onsubmit="functionRedirect(); return false">
       <fieldset>
         <legend>Dados Pessoais</legend>
         <br />
@@ -20,15 +20,34 @@
         <br />
         <fieldset class="sexfieldset">
           <legend>Sexo</legend>
-          <input required type="radio" value="smasc" id="smasc" name="sex" />
+          <input
+            required
+            type="radio"
+            value="Masculino"
+            id="smasc"
+            name="sex"
+          />
           <label for="smasc">Masculino</label>
-          <input required type="radio" value="fsex" id="sfemi" name="sex" />
+          <input required type="radio" value="Feminino" id="sfemi" name="sex" />
           <label for="sfemi">Feminino</label>
         </fieldset>
         <br />
         <input type="submit" />
       </fieldset>
     </form>
+    <p id="message">Total de usuários cadastrados: 0</p>
+    <br />
+    <p style="display: none" id="message2">
+      Mostrar/Esconder Lista de Cadastrados
+      <label class="switch" for="showdiv">
+        <input id="showdiv" type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+    </p>
+
+    <br />
+    <div style="display: none" id="userlist"></div>
+
     <script src="script.js"></script>
   </body>
 </html>
