@@ -8,16 +8,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form action="." method="GET" onsubmit="noRefreshPage();return false">
+    <form action="." method="GET" onsubmit="functionRedirect();return false">
       <fieldset>
         <legend>Dados Pessoais</legend>
         <br />
         <label for="fullname">Nome Completo</label>
         <input required type="text" id="fullname" name="fname" /> <br />
         <br />
-        <label timezone="[[timezone]]" for="birthdate"
-          >Data de Nascimento</label
-        >
+        <label for="birthdate">Data de Nascimento</label>
         <input required type="date" id="birthdate" name="bdate" /> <br />
         <br />
         <fieldset class="sexfieldset">
